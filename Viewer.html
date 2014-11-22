@@ -1,0 +1,35 @@
+<!-- Viewer.html    -->
+<!-- Rachael Keller  -->
+<!-- ME4563 Project5 -->
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Viewer</title>
+    </head>
+
+    <body onload="main()">
+        <canvas id="webgl" width="400" height="400" onmousemove="move(event)">
+            Please use a browser that supports "canvas"
+        </canvas>
+        <script src="webgl-utils.js"></script>
+        <script src="webgl-debug.js"></script>
+        <script src="cuon-utils.js"></script>
+        <script src="Viewer.js"></script>
+        <script src="cuon-matrix.js"></script>
+        <script type="text/javascript" src="bunny.js"></script>
+        <table>
+             <tr>
+                <td>Translate down Z:</td>
+                <td><input id="zinput" type="range" min="0.0" max="10.0" step="0.1" oninput="draw()"></td>
+                <td id="zoutput">0</td>
+            </tr>    
+            <tr>
+                <td>Field of View:</td>
+                <td><input id="finput" type="range" min="10.0" max="90.0" step="1" oninput="draw()"></td>
+                <td id="foutput">0</td>
+            </tr>
+        </table>
+    </body>
+</html>
