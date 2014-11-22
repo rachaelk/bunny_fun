@@ -1,6 +1,4 @@
 // Viewer.js
-// Rachael Keller
-// ME 4563 Project5
 
 // Vertex shader program
 var vertex_shader_source =
